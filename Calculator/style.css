@@ -30,10 +30,15 @@ body {
     align-items: center;
     background-color: var(--screen-color);
 }
-.switch-mode{
-    margin-bottom: 10px;
-    background-color: #000;
+.toggle{
+    padding: 8px;
+    margin: 10px;
+    background-color: var(--operators-color);
+    border: none;
     color: var(--text-color);
+    font-size: normal;
+    font-weight: 300;
+    border-radius: 5px;
 }
 .calculator{
     width: 310px;

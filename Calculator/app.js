@@ -21,16 +21,19 @@ function calculate() {
   
 }
 
+// theme
+
 const setDark = () => {
   document.querySelector('body').setAttribute('data-theme', 'dark');
+  localStorage.setItem('theme', 'dark');
 }
 const setLight = () => {
   document.querySelector('body').setAttribute('data-theme', 'light');
+  localStorage.setItem('theme', 'light');
 }
-
+const selectedTheme = localStorage.getItem('theme')
+selectedTheme === 'light' ? setLight() : setDark();
 const toggleMode = () => {
   const theme = document.querySelector('body').getAttribute('data-theme');
-  
   theme === 'dark' ? setLight() : setDark();
-  
 }
